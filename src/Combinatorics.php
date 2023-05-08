@@ -50,6 +50,7 @@ abstract class Combinatorics
      * @return int
      *             The number of element
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->toArray());
