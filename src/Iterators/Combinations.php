@@ -32,6 +32,7 @@ class Combinations extends Iterators
     /**
      * {@inheritdoc}
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         $i = 0;
@@ -46,6 +47,7 @@ class Combinations extends Iterators
     /**
      * {@inheritdoc}
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         $r = [];
@@ -62,6 +64,7 @@ class Combinations extends Iterators
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         if ($this->nextHelper()) {
@@ -74,6 +77,7 @@ class Combinations extends Iterators
     /**
      * {@inheritdoc}
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->c = range(0, $this->length);
@@ -85,6 +89,7 @@ class Combinations extends Iterators
      *
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         return 0 <= $this->key;
@@ -96,6 +101,7 @@ class Combinations extends Iterators
      * @return bool
      *              Return true or false
      */
+    #[\ReturnTypeWillChange]
     protected function nextHelper()
     {
         $i = $this->length - 1;
